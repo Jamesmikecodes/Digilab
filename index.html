@@ -80,7 +80,7 @@
           <br />
           country
         </p>
-        <button id="contact-button">Get in touch</button>
+        <button id="contact-button" type="button">Get in touch</button>
       </div>
       <div class="hero-image"></div>
     </div>
@@ -113,6 +113,78 @@
       </div>
     </div>
 
+    <div id="contact-modal" class="contact-modal" aria-hidden="true">
+      <div class="contact-modal__overlay" data-close-modal></div>
+      <section
+        class="contact-modal__content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="contact-modal-title"
+      >
+        <button
+          class="contact-modal__close"
+          type="button"
+          aria-label="Close contact form"
+          data-close-modal
+        >
+          &times;
+        </button>
+        <h3 id="contact-modal-title">Get in touch</h3>
+        <form class="contact-form">
+          <div class="contact-form__row">
+            <label>
+              First Name
+              <input type="text" name="firstName" placeholder="Jane" required />
+            </label>
+            <label>
+              Last Name
+              <input type="text" name="lastName" placeholder="Doe" required />
+            </label>
+          </div>
+          <div class="contact-form__row">
+            <label>
+              Email
+              <input type="email" name="email" placeholder="jane@example.com" required />
+            </label>
+            <label>
+              Phone number
+              <input type="tel" name="phone" placeholder="(555) 123-4567" required />
+            </label>
+          </div>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+          </label>
+          <button class="contact-form__submit" type="submit">Submit</button>
+        </form>
+      </section>
+    </div>
+
     <footer>Copyright &copy; 2025</footer>
+
+    <script>
+      const contactButton = document.getElementById("contact-button");
+      const contactModal = document.getElementById("contact-modal");
+      const closeButtons = document.querySelectorAll("[data-close-modal]");
+
+      const openModal = () => {
+        contactModal.classList.add("contact-modal--open");
+        contactModal.setAttribute("aria-hidden", "false");
+      };
+
+      const closeModal = () => {
+        contactModal.classList.remove("contact-modal--open");
+        contactModal.setAttribute("aria-hidden", "true");
+      };
+
+      contactButton.addEventListener("click", openModal);
+      closeButtons.forEach((button) => button.addEventListener("click", closeModal));
+
+      window.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && contactModal.classList.contains("contact-modal--open")) {
+          closeModal();
+        }
+      });
+    </script>
   </body>
 </html>
