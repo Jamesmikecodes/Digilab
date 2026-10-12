@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "id": "p1",
+      "kind": "original",
+      "title": "Placeholder: how the web really works",
+      "summary": "Placeholder excerpt for an original article.",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "p2",
+      "kind": "external",
+      "title": "Placeholder: featured external story",
+      "summary": "Placeholder excerpt. Link out to source with attribution.",
+      "source": "Example Tech News",
+      "url": "https://example.com"
+    },
+    {
+      "id": "p3",
+      "kind": "original",
+      "title": "Placeholder: data skills that transfer",
+      "summary": "Placeholder excerpt for an original article.",
+      "date": "2026-09-20"
+    }
+  ]
+}

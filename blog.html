@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog — Digilab</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/e3c5fab207.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"
+      integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrapper header-wrapper">
+        <nav class="flex-nav" aria-label="Primary">
+          <a href="index.html" class="brand" aria-label="Digilab home">Digilab<span aria-hidden="true">.</span></a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+          <ul id="primary-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html" aria-current="page" class="is-active">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <p class="page-eyebrow">Blog</p>
+        <h1>Placeholder Blog page</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placeholder list for posts, news, and updates.</p>
+      </section>
+      <section class="placeholder-grid">
+        <article class="glass-card"><span class="card-tag">Apr 08, 2026</span><h2>Post title one</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeholder excerpt.</p><a class="card-link" href="contact.html">Read more</a></article>
+        <article class="glass-card"><span class="card-tag">Apr 01, 2026</span><h2>Post title two</h2><p>Sed do eiusmod tempor incididunt ut labore. Placeholder excerpt.</p><a class="card-link" href="contact.html">Read more</a></article>
+        <article class="glass-card"><span class="card-tag">Mar 24, 2026</span><h2>Post title three</h2><p>Ut enim ad minim veniam, quis nostrud. Placeholder excerpt.</p><a class="card-link" href="contact.html">Read more</a></article>
+      </section>
+    </main>
+
+    <div id="contact-modal" class="contact-modal" aria-hidden="true">
+      <div class="contact-modal__overlay" data-close-modal></div>
+      <section class="contact-modal__content" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+        <button class="contact-modal__close" type="button" aria-label="Close contact form" data-close-modal>&times;</button>
+        <h3 id="contact-modal-title">Get in touch</h3>
+        <form class="contact-form" id="contact-form">
+          <div class="contact-form__row">
+            <label><div>First Name<span class="required-asterisk" aria-hidden="true">*</span></div><input type="text" name="firstName" placeholder="Jane" required /></label>
+            <label><div>Last Name<span class="required-asterisk" aria-hidden="true">*</span></div><input type="text" name="lastName" placeholder="Doe" required /></label>
+          </div>
+          <div class="contact-form__row">
+            <label><div>Email<span class="required-asterisk" aria-hidden="true">*</span></div><input type="email" name="email" placeholder="jane@example.com" required /></label>
+            <label><div>Phone number<span class="required-asterisk" aria-hidden="true">*</span></div><input type="tel" name="phone" placeholder="(555) 123-4567" required /></label>
+          </div>
+          <label>Message<textarea name="message" rows="5" placeholder="Tell us about your project" required></textarea></label>
+          <button class="contact-form__submit" type="submit">Submit</button>
+        </form>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <div class="wrapper footer-inner">
+        <p class="footer-copy">Copyright &copy; 2026</p>
+        <ul class="footer-socials" aria-label="Social media">
+          <li><a href="https://x.com/iam_jamesmike" aria-label="X" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="https://web.facebook.com/officialjamesmike1" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.threads.net/@officialjamesmike" aria-label="Threads" target="_blank" rel="noopener"><i class="fa-brands fa-threads" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

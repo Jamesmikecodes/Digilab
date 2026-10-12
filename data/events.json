@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "id": "e1",
+      "title": "Placeholder Tech Summit",
+      "date": "2026-10-25",
+      "location": "Lagos / Online",
+      "url": "https://example.com",
+      "note": "Placeholder: flagship summit for the month."
+    },
+    {
+      "id": "e2",
+      "title": "Placeholder Dev Meetup",
+      "date": "2026-10-18",
+      "location": "Online",
+      "url": "https://example.com",
+      "note": "Placeholder: monthly builder meetup."
+    }
+  ]
+}

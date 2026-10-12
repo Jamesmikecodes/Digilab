@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "id": "ug-research",
+      "category": "research",
+      "title": "Undergraduate Research Support",
+      "summary": "Placeholder: topics, proposals, questionnaires, analysis, write-up help."
+    },
+    {
+      "id": "pg-research",
+      "category": "research",
+      "title": "Postgraduate Research Support",
+      "summary": "Placeholder: methodology review, data analysis, chapter feedback."
+    },
+    {
+      "id": "biz-data-research",
+      "category": "research",
+      "title": "Business & Data Centre Research",
+      "summary": "Placeholder: market studies, dashboards, reports for teams."
+    }
+  ]
+}

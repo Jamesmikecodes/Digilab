@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -24,40 +24,32 @@
     />
   </head>
   <body>
-    <header>
-      <div class="wrapper">
-        <nav class="flex-nav">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            <li class="social">
-              <a href="https://x.com/iam_jamesmike"
-                ><i class="fa-brands fa-square-twitter" target="_blank"></i
-              ></a>
+    <header class="site-header">
+      <div class="wrapper header-wrapper">
+        <nav class="flex-nav" aria-label="Primary">
+          <a href="index.html" class="brand" aria-label="Digilab home"
+            >Digilab<span aria-hidden="true">.</span></a
+          >
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-menu"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul id="primary-menu">
+            <li>
+              <a href="index.html" aria-current="page" class="is-active">Home</a>
             </li>
-            <li class="social">
-              <a
-                href="https://web.facebook.com/officialjamesmike1"
-                target="_blank"
-                ><i class="fa-brands fa-square-facebook"></i
-              ></a>
-            </li>
-            <li class="social">
-              <a
-                href="https://www.threads.net/@officialjamesmike"
-                target="_blank"
-                ><i class="fa-brands fa-square-threads"></i
-              ></a>
-            </li>
-            <li class="social">
-              <a href="#" target="_blank"
-                ><i class="fa-brands fa-google-plus-g"></i
-              ></a>
-            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -80,32 +72,95 @@
           <br />
           country
         </p>
-        <button id="contact-button" type="button">Get in touch</button>
+        <a id="contact-button" href="contact.html">Get in touch</a>
       </div>
       <div class="hero-image"></div>
     </div>
     <div id="section-container">
       <div id="sidebar">
-        <nav>
-          <li><i class="fa-regular fa-lightbulb"></i>Business Strategy</li>
-          <li><i class="fa-solid fa-book-open"></i>Research</li>
-          <li>
-            <i class="fa-solid fa-magnifying-glass-chart"></i>Data Analysis
-          </li>
-          <li><i class="fa-solid fa-compass-drafting"></i>UI Design</li>
-          <li><i class="fa-solid fa-compass-drafting"></i>UX Design</li>
-          <li><i class="fa-solid fa-microchip"></i>Technology</li>
-          <li><i class="fa-solid fa-lightbulb"></i>Creative</li>
+        <nav aria-label="Services">
+          <ul class="sidebar-list">
+            <li>
+              <button
+                type="button"
+                class="sidebar-item sidebar-item--active"
+                data-service="strategy"
+                aria-current="true"
+              >
+                <i class="fa-regular fa-lightbulb"></i>Business Strategy
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="sidebar-item"
+                data-service="research"
+                aria-current="false"
+              >
+                <i class="fa-solid fa-book-open"></i>Research
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="sidebar-item"
+                data-service="data"
+                aria-current="false"
+              >
+                <i class="fa-solid fa-magnifying-glass-chart"></i>Data Analysis
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="sidebar-item"
+                data-service="ui"
+                aria-current="false"
+              >
+                <i class="fa-solid fa-compass-drafting"></i>UI Design
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="sidebar-item"
+                data-service="ux"
+                aria-current="false"
+              >
+                <i class="fa-solid fa-pen-ruler"></i>UX Design
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="sidebar-item"
+                data-service="technology"
+                aria-current="false"
+              >
+                <i class="fa-solid fa-microchip"></i>Technology
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="sidebar-item"
+                data-service="creative"
+                aria-current="false"
+              >
+                <i class="fa-solid fa-lightbulb"></i>Creative
+              </button>
+            </li>
+          </ul>
         </nav>
       </div>
       <div class="description">
-        <i id="idea" class="fa-regular fa-lightbulb"></i>
-        <h3>Busines Strategy</h3>
-        <p>
+        <i id="service-icon" class="fa-regular fa-lightbulb"></i>
+        <h3 id="service-title">Business Strategy</h3>
+        <p id="service-text-1">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur,
           exercitationem beatae esse aperiam magnam saepe.
         </p>
-        <p>
+        <p id="service-text-2">
           Dolore animi voluptate necessitatibus pariatur quae, est facere
           deleniti doloribus eum possimus exercitationem minima voluptas?
         </p>
@@ -130,61 +185,108 @@
           &times;
         </button>
         <h3 id="contact-modal-title">Get in touch</h3>
-        <form class="contact-form">
+        <form class="contact-form" id="contact-form">
           <div class="contact-form__row">
             <label>
-              First Name
+              <div>
+                First Name<span class="required-asterisk" aria-hidden="true"
+                  >*</span
+                >
+              </div>
+
               <input type="text" name="firstName" placeholder="Jane" required />
             </label>
             <label>
-              Last Name
+              <div>
+                Last Name<span class="required-asterisk" aria-hidden="true"
+                  >*</span
+                >
+              </div>
+
               <input type="text" name="lastName" placeholder="Doe" required />
             </label>
           </div>
           <div class="contact-form__row">
             <label>
-              Email
-              <input type="email" name="email" placeholder="jane@example.com" required />
+              <div>
+                Email<span class="required-asterisk" aria-hidden="true">*</span>
+              </div>
+              <input
+                type="email"
+                name="email"
+                placeholder="jane@example.com"
+                required
+              />
             </label>
             <label>
-              Phone number
-              <input type="tel" name="phone" placeholder="(555) 123-4567" required />
+              <div>
+                Phone number<span class="required-asterisk" aria-hidden="true"
+                  >*</span
+                >
+              </div>
+
+              <input
+                type="tel"
+                name="phone"
+                placeholder="(555) 123-4567"
+                required
+              />
             </label>
           </div>
           <label>
             Message
-            <textarea name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Tell us about your project"
+              required
+            ></textarea>
           </label>
           <button class="contact-form__submit" type="submit">Submit</button>
         </form>
       </section>
     </div>
 
-    <footer>Copyright &copy; 2025</footer>
+    <footer class="site-footer">
+      <div class="wrapper footer-inner">
+        <p class="footer-copy">Copyright &copy; 2026</p>
+        <ul class="footer-socials" aria-label="Social media">
+          <li>
+            <a
+              href="https://x.com/iam_jamesmike"
+              aria-label="X"
+              target="_blank"
+              rel="noopener"
+              ><i class="fa-brands fa-x-twitter" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://web.facebook.com/officialjamesmike1"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener"
+              ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.threads.net/@officialjamesmike"
+              aria-label="Threads"
+              target="_blank"
+              rel="noopener"
+              ><i class="fa-brands fa-threads" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" aria-label="Instagram" target="_blank" rel="noopener"
+              ><i class="fa-brands fa-instagram" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
-    <script>
-      const contactButton = document.getElementById("contact-button");
-      const contactModal = document.getElementById("contact-modal");
-      const closeButtons = document.querySelectorAll("[data-close-modal]");
-
-      const openModal = () => {
-        contactModal.classList.add("contact-modal--open");
-        contactModal.setAttribute("aria-hidden", "false");
-      };
-
-      const closeModal = () => {
-        contactModal.classList.remove("contact-modal--open");
-        contactModal.setAttribute("aria-hidden", "true");
-      };
-
-      contactButton.addEventListener("click", openModal);
-      closeButtons.forEach((button) => button.addEventListener("click", closeModal));
-
-      window.addEventListener("keydown", (event) => {
-        if (event.key === "Escape" && contactModal.classList.contains("contact-modal--open")) {
-          closeModal();
-        }
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

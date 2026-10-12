@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "id": "idea-1",
+      "title": "Placeholder: weekend coding club",
+      "summary": "Placeholder idea to test with learners.",
+      "status": "testing",
+      "votes": 12
+    },
+    {
+      "id": "idea-2",
+      "title": "Placeholder: research helpdesk",
+      "summary": "Placeholder idea for student office hours.",
+      "status": "proposed",
+      "votes": 7
+    }
+  ]
+}
