@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "id": "t1",
+      "name": "Placeholder Student",
+      "role": "Web skills learner",
+      "quote": "Placeholder testimonial: what changed after the course.",
+      "rating": 5
+    },
+    {
+      "id": "t2",
+      "name": "Placeholder Buyer",
+      "role": "Digital product buyer",
+      "quote": "Placeholder testimonial: how the templates saved time.",
+      "rating": 5
+    },
+    {
+      "id": "t3",
+      "name": "Placeholder Client",
+      "role": "Research client",
+      "quote": "Placeholder testimonial: how the analysis helped a decision.",
+      "rating": 4
+    }
+  ]
+}

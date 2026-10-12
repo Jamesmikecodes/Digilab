@@ -1,0 +1,42 @@
+{
+  "items": [
+    {
+      "id": "html-css-basics",
+      "category": "course",
+      "title": "HTML & CSS Basics",
+      "summary": "Placeholder: semantic HTML, Flexbox, responsive layouts.",
+      "level": "Beginner",
+      "price": "Free"
+    },
+    {
+      "id": "js-foundations",
+      "category": "course",
+      "title": "JavaScript Foundations",
+      "summary": "Placeholder: DOM, fetch, forms, vanilla app structure.",
+      "level": "Beginner",
+      "price": "TBD"
+    },
+    {
+      "id": "data-skills-starter",
+      "category": "course",
+      "title": "Data Skills Starter",
+      "summary": "Placeholder: spreadsheets to basic analysis and charts.",
+      "level": "Beginner",
+      "price": "TBD"
+    },
+    {
+      "id": "ui-design-kit",
+      "category": "digital-product",
+      "title": "UI Design Starter Kit",
+      "summary": "Placeholder: reusable CSS components and page templates.",
+      "price": "TBD"
+    },
+    {
+      "id": "research-template-pack",
+      "category": "digital-product",
+      "title": "Research Template Pack",
+      "summary": "Placeholder: proposals, questionnaires, analysis checklists.",
+      "price": "TBD"
+    }
+  ]
+}
